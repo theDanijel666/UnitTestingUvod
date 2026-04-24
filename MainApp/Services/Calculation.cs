@@ -39,5 +39,54 @@ namespace MainApp.Services
             }
             return op;
         }
+
+        /// <summary>
+        /// Calculates the sum of two integers.
+        /// </summary>
+        /// <param name="a">The first integer to add.</param>
+        /// <param name="b">The second integer to add.</param>
+        /// <returns>The sum of the two specified integers.</returns>
+        public int Sum(int a, int b)
+        {
+            return a + b;
+        }
+
+        /// <summary>
+        /// Calculates the result of subtracting one integer from another.
+        /// </summary>
+        /// <param name="a">The minuend. The value from which <paramref name="b"/> is subtracted.</param>
+        /// <param name="b">The subtrahend. The value to subtract from <paramref name="a"/>.</param>
+        /// <returns>The result of <paramref name="a"/> minus <paramref name="b"/>.</returns>
+        public int Subtract(int a, int b) 
+        {
+            return a - b;
+        }
+
+        /// <summary>
+        /// Calculates the product of two integers.
+        /// </summary>
+        /// <param name="a">The first integer to multiply.</param>
+        /// <param name="b">The second integer to multiply.</param>
+        /// <returns>The product of the two specified integers.</returns>
+        public int Multiply(int a,int b)
+        {
+            return a * b;
+        }
+
+        /// <summary>
+        /// Divides one integer by another and returns the result as an integer quotient.
+        /// </summary>
+        /// <param name="a">The dividend. This is the number to be divided.</param>
+        /// <param name="b">The divisor. This is the number by which to divide. Must not be zero.</param>
+        /// <returns>The integer result of dividing <paramref name="a"/> by <paramref name="b"/>.</returns>
+        /// <exception cref="DivideByZeroException">Thrown when <paramref name="b"/> is zero.</exception>
+        public int Divide(int a, int b)
+        {
+            if (b == 0)
+            {
+                throw new DivideByZeroException("Cannot divide by zero!");
+            }
+            return a / b;
+        }
     }
 }
