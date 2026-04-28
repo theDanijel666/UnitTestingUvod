@@ -2,5 +2,6 @@
   <Project Path="MainApp.UnitTest/MainApp.UnitTest.csproj" />
   <Project Path="MainApp/MainApp.csproj" />
   <Project Path="Shared/Shared.csproj" Id="3f402f9f-c544-474e-8d1c-003907cdb460" />
+  <Project Path="WebMvc.UnitTest/WebMvc.UnitTest.csproj" Id="9258f0ee-5ed0-47aa-9636-eb38fbca4489" />
   <Project Path="WebMvc/WebMvc.csproj" Id="bdf77810-7dde-485b-b7f9-b5a6f5826e72" />
 </Solution>

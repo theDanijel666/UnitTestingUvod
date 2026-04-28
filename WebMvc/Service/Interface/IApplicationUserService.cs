@@ -3,7 +3,7 @@ using Shared.Models.ViewModel;
 
 namespace WebMvc.Service.Interface
 {
-    public interface IAppplicationUserService
+    public interface IApplicationUserService
     {
         ApplicationUserViewModel AddApplicationUser(ApplicationUserBinding model);
         ApplicationUserViewModel DeleteApplicationUser(int id);

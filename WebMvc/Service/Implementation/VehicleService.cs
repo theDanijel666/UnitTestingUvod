@@ -43,6 +43,7 @@ namespace WebMvc.Service.Implementation
         public VehicleViewModel UpdateVehicle(VehicleUpdateBinding model)
         {
             var dbo = _vehicles.FirstOrDefault(v => v.Id == model.Id);
+            if (dbo == null) return null;
             dbo = _mapper.Map(model, dbo);
             return _mapper.Map<VehicleViewModel>(dbo);
         }
